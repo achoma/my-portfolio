@@ -12,18 +12,26 @@
       integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
     href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Montserrat:wght@400;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap""
     rel="stylesheet"
-  />
+    />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.css"
+      integrity="sha512-Oi2rb7RCg9JJzHCNFHsZgzlreLA/C4mNWCDMGHwhzVtPrQJey0zKnc9t8gwO5uzPJQNc9rC3zJksZb4/rKY+9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      />  
   </head>
   <body>
-<header>
+  <header>
     <div class="container">
       <div class="header-content">
         <a href="index.html"><img 
@@ -34,15 +42,14 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#service">Portfolio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
-  
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="container">
       <div class="hero-content">
         <div>
@@ -87,14 +94,13 @@
           </div>
         </div>
   
-        <img src="images/4.jpg" alt="author image">
+        <img src="images/photo4.jpg" alt="author image">
       </div>
     </div>
   </section>
-  
-  <section class="about">
+  <section id="about" class="about">
     <div class="container">
-      <div class="about-content"><img src="images/1.jpg" alt="about">
+      <div class="about-content"><img src="images/photo1.jpg" alt="about">
         <div>
           <h5>Who am i?</h5>
           <h2>I'm Agnieszka Choma a Front-End Developer</h2>
@@ -118,77 +124,101 @@
     </div>
   </section>
   <section class="skils">
-    <div class="container skils-content">
-      <div class="skils-item">
-        
-        <h5>using now:</h5>
-        <ul>
-          <li>
-            <svg >
-              <use href="./images/icons.svg#icon-html5"></use>
-            </svg> 
-            <p>HTML5</p>
-          </li>
-          <li>
-            <svg >
-              <use href="./images/icons.svg#icon-css3"></use>
-            </svg> 
-            <p>CSS3</p>
-          </li>
-          <li>
-            <svg >
-              <use href="./images/icons.svg#icon-javascript"></use>
-            </svg> 
-            <p>JavaScript</p>
-          </li>
-          <li>
-            <svg >
-              <use href="./images/icons.svg#icon-git"></use>
-            </svg> 
-            <p>GitHub</p>
-          </li>
-          <li>
-            <svg >
-              <use href="./images/icons.svg#icon-figma"></use>
-            </svg>                      
-            <p>Figma</p>
-          </li>
-        </ul>
-      </div>
-      <div class="skils-item">
-        <h5>learning:</h5>
-        <ul >
-          <li>
-            <svg >
-              <use href="./images/icons.svg#icon-node-dot-js"></use>
-            </svg>
-            <p>NodeJS</p>
-          </li>
-          <li>
-            <svg >
-              <use href="./images/icons.svg#icon-react"></use>
-            </svg>
-            <p>React</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="portfolio">
     <div class="container">
-      <div class="portfolio-content"></div>
+      <h2>skils</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi dolore iusto commodi! Ab placeat assumenda dolorum nam culpa, at veritatis architecto dignissimos minima voluptatibus eum quidem. Minima, repellendus tempora.</p>
+      <div class="skils-content">
+        <div class="skils-item">
+          <h5>using now:</h5>
+          <ul>
+            <li>
+              <svg >
+                <use href="./images/icons.svg#icon-html5"></use>
+              </svg> 
+              <p>HTML5</p>
+            </li>
+            <li>
+              <svg >
+                <use href="./images/icons.svg#icon-css3"></use>
+              </svg> 
+              <p>CSS3</p>
+            </li>
+            <li>
+              <svg >
+                <use href="./images/icons.svg#icon-javascript"></use>
+              </svg> 
+              <p>JavaScript</p>
+            </li>
+            <li>
+              <svg >
+                <use href="./images/icons.svg#icon-Vector1"></use>
+              </svg> 
+              <p>GitHub</p>
+            </li>
+            <li>
+              <svg >
+                <use href="./images/icons.svg#icon-figma"></use>
+              </svg>                      
+              <p>Figma</p>
+            </li>
+            <li>
+              <svg >
+                <use href="./images/icons.svg#icon-visualstudiocode"></use>
+              </svg>                      
+              <p>VSCode</p>
+            </li>
+          </ul>
+        </div>
+        <div class="skils-item">
+        <h5>learning:</h5>
+          <ul >
+            <li>
+              <svg >
+                <use href="./images/icons.svg#icon-node-dot-js"></use>
+              </svg>
+              <p>NodeJS</p>
+            </li>
+            <li>
+              <svg >
+                <use href="./images/icons.svg#icon-react"></use>
+              </svg>
+              <p>React</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="contact">
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="portfolio-content">
+        <h2>portfolio</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur saepe temporibus modi dicta, et aliquam at quia, ipsam, molestiae earum atque est ab cupiditate? Perspiciatis odio autem unde sequi eum?
+        </p>
+      
+        <ul class="gallery"></ul>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact">
     <div class="container">
       <div class="portfolio-content"></div>
     </div>
   </section>
   <footer>
     <div class="container">
-      <p>&copy; 2023 Copyright <b>Agnieszka Choma</b> All Rights Reserved</p>
+      <p>&copy; 2024 Copyright <b>Agnieszka Choma</b> All Rights Reserved</p>
         
     </div>
   </footer>
+  <script
+  async
+  src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"
+  integrity="sha512-/4kQE5RJQYHRhUiK+CZS8UhaJTnLmQkDuf8lOhiP2xLdjthA/rm0VqqWjcyelIx+NDyNHFmtqvuIgOFQnI34WA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer">
+  </script>
+  <script src="js/gallery-items.js" type="module">  </script>
+  <script src="js/index.js" type="module"></script>
 </body>
 </html>
