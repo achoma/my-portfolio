@@ -32,7 +32,8 @@
   a {
     text-decoration: none;
   }
-  
+  li {
+    list-style: none;}
   ul {
     list-style: none;}
   /*---------------------------------
@@ -87,28 +88,6 @@
   /*---------------------------------
           SM-ICONS
   ----------------------------------*/
-  /* .button {
-    padding: 16px 30px;
-    display: inline-block;
-    letter-spacing: 2px;
-    font-weight: 600;
-    border-radius: 15px;
-    color: #fff;
-    background-color: var(--light-green);
-    border: 1px solid var(--green);
-  }
-  
-  .button:hover {
-    color: #fff;
-    background-color: var(--light-green);
-    border-color: var(--light-green);
-  }
-  
-  .button-secondary {
-    background: none;
-    color: var(--green);
-  }
-   */
 
   .sm {
     padding-top: 30px;
@@ -141,7 +120,7 @@
           HERO
   ----------------------------------*/
   .hero {
-    margin-top: 80px;
+    margin-top: 95px;
     padding: 50px 0;
     background-color:var(--dark-green);
   }
@@ -214,6 +193,38 @@
     margin: 0;
   }
   
+/*---------------------------------
+          SKILS
+  ----------------------------------*/
+  .skils {
+    padding: 50px 0;
+    background-color:var(--dark-green);
+  }
+  
+  .skils-content {    
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    gap: 30px;
+  } 
+
+
+  .skils p {
+    color: var(--light-grey);
+  }
+  
+  .skils-item ul{  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-shrink: 0;
+    row-gap: 48px;
+    column-gap: 24px;
+    margin-bottom: 48px;
+  }
+.skils-item svg{
+    width: 48px;
+    height: 48px; 
+}
 /*---------------------------------
           FOOTER
 ----------------------------------*/
