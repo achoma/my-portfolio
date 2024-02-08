@@ -204,7 +204,6 @@
   }
   
   .skils-content {   
-    padding-top: 40px;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
     gap: 30px;
@@ -222,6 +221,7 @@
     padding-top: 20px;
     color: var(--light-grey);
     text-align: center;
+    padding-bottom: 40px;
   }
   .skils-item p {
     font-size: 16px;
@@ -260,6 +260,8 @@
 }
 .portfolio p{
   text-align: center;
+  padding-bottom: 40px;
+
 }
 .portfolio-content {  
   margin-top: 80px;
@@ -283,7 +285,6 @@
 }
 
 .gallery__item {
-  position: relative;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
@@ -313,22 +314,29 @@
   ----------------------------------*/
   .contact {
     padding: 50px 0;
+    background-color: var(--dark-green);
+
   }
-  
-  .contact-content {  
-    margin-top: 80px;
-    display: grid;
-    grid-template-columns: 0.3fr 0.7fr;
-    gap: 60px;
-  }
-   
-  .contact h2 {
+  .contact h2{
     font-size: 35px;
     font-weight: 700;
     margin: 20px 0px;
-    color: var(--dark-green);
+    text-align: center;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
   }
-  
+  .contact p{
+    text-align: center;
+    padding-bottom: 40px;
+    color: var(--light-grey);
+  }
+  .contact-content {  
+    margin-top: 80px;
+  }
+  .contact label{
+    color: var(--light-grey);
+  }
 
 /*---------------------------------
           FOOTER

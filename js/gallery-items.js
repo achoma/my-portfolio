@@ -55,12 +55,5 @@ export const galleryItems = [
     './images/portfolio8.png',
     description: 'Alpine Spring Meadows',
   },
-  {
-    preview:
-    './images/portfolio5.png',
-    original:
-    './images/portfolio5.png',
-    description: 'Nature Landscape',
-  },
   
 ];
