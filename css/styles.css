@@ -1,9 +1,9 @@
 :root {
     --dark:#000503;
     --gold:#ad9551;
-    --dark-green: #0B3826; 
+    --dark-green: #07271A; 
     --green:#2B6B51;
-    --light-green:#5F9E85;
+    --light-green:#3E8468;
     --green-grey:#A7D1C0;
     --light-grey:#E9EFEC;}
 * {
@@ -21,7 +21,7 @@
   }
   
   h5 {
-    color: var(--light-green);
+    color: var(--gold);
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
@@ -29,17 +29,12 @@
     margin-top: 0;
   }
   
-  footer {
-    background: var(--light-grey);
-    color: var(--dark);
-    padding: 50px 0;
-    text-align: center;
-  }
-  
   a {
     text-decoration: none;
   }
   
+  ul {
+    list-style: none;}
   /*---------------------------------
           HEADER
   ----------------------------------*/
@@ -48,7 +43,6 @@
     top: 0;
     width: 100%;
     background-color: var(--light-grey);
-    padding: 20px 0;
   }
   
   .header-content {
@@ -56,12 +50,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  
-  .logo {
-    font-size: 35px;
-    font-weight: 900;
-    color: #ccde02;
-  }
+ 
   
   nav ul {
     list-style: none;
@@ -80,18 +69,25 @@
   }
   
   nav a:hover {
-    color: var(--green);  }
+    color: var(--gold);  
+    text-decoration:underline;
+}
   
-  nav a[href*="coderslab.pl"] {
-    background-color:var(--green);
+  nav a[href*="#contact"] {
+    background-color:var(--gold);
     padding: 6px 12px;
     border-radius: 15px;
   }
+  nav a[href*="#contact"]:hover{
+    color: var(--gold);  
+    background-color:var(--dark-green);
+    text-decoration: none;
+  }
   
   /*---------------------------------
-          BUTTON
+          SM-ICONS
   ----------------------------------*/
-  .button {
+  /* .button {
     padding: 16px 30px;
     display: inline-block;
     letter-spacing: 2px;
@@ -112,14 +108,42 @@
     background: none;
     color: var(--green);
   }
-  
+   */
+
+  .sm {
+    padding-top: 30px;
+    display: flex;
+    gap: 26px;    
+  }
+  .sm div {
+    background-color: var(--gold);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;  
+    fill: var(--dark-green);      /*coś tu nie działa z kolorami*/
+  }
+  .sm svg {
+    margin: 8px;
+    width: 24px;
+    height: 24px; 
+  }
+
+  .sm div:focus,
+  .sm div:hover{
+    background-color: var(--dark);
+    fill: var(--gold);
+  }
+
+  .sm div:hover {
+    cursor: pointer;
+  }
   /*---------------------------------
           HERO
   ----------------------------------*/
   .hero {
     margin-top: 80px;
     padding: 50px 0;
-    background-color:var(--dark);
+    background-color:var(--dark-green);
   }
   
   .hero-content {
@@ -190,32 +214,12 @@
     margin: 0;
   }
   
-  .about-social {
-    margin: 20px 0;
+/*---------------------------------
+          FOOTER
+----------------------------------*/
+  footer {
+    background: var(--light-grey);
+    color: var(--dark);
+    padding: 10px 0;
+    text-align: center;
   }
-  
-  .about-social ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 10px;
-    list-style: none;
-  }
-  
-  .about-social a {
-    color: #020202;
-    font-size: 16px;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #020202;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .about-social a:hover {
-    color: #ccde02;
-    border-color: #ccde02;
-  }
-  
