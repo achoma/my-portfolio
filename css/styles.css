@@ -312,11 +312,14 @@
 /*---------------------------------
           CONTACT
   ----------------------------------*/
-  .contact {
+  .contact {    
     padding: 50px 0;
     background-color: var(--dark-green);
-
   }
+.contact-span{
+  margin-top: 80px;
+
+}
   .contact h2{
     font-size: 35px;
     font-weight: 700;
@@ -325,18 +328,114 @@
     color: var(--gold);
     text-transform: uppercase;
     letter-spacing: 3px;
+    padding-bottom: 20px;
   }
   .contact p{
-    text-align: center;
-    padding-bottom: 40px;
+    text-align: cent/er;
+    padding-bottom: 15px;
     color: var(--light-grey);
   }
+
   .contact-content {  
-    margin-top: 80px;
+    display: grid;
+    grid-template-columns:0.6fr 0.4fr ;
+    gap: 60px;
   }
-  .contact label{
-    color: var(--light-grey);
-  }
+/*---------------------------------
+          FORM
+  ----------------------------------*/
+.contact label {
+  display: flex;
+  flex-direction: column;
+  color: var(--green-grey);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.48px;
+  gap: 12px;
+  padding-bottom: 12px;
+}
+
+.input-wrapper {
+  display: flex;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--green-grey);
+}
+
+.input-wrapper:focus-within {
+  border: 1px solid var(--green);
+}
+.input-wrapper > input {
+  flex-grow: 1;
+  padding-left: 4px;
+  color: var(--light-grey);
+  font-size: 16px;
+
+}
+
+.box-input:not([type="checkbox"]) {
+  border: none;
+  background-color: transparent;
+  outline: transparent;
+  fill: var(--green);
+}
+textarea {
+  resize: none;
+}
+.label-comment {
+  padding-top: 8px;
+  padding-left: 16px;
+  /* width: 360px; */
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid var(--green-grey);
+  color: var(--light-grey);
+  font-size: 16px;
+}
+.label-comment:focus-within {
+  padding-top: 8px;
+  padding-left: 16px;
+  flex-grow: 1;
+  outline: transparent;
+  border: 1px solid var(--green);
+}
+
+.privacy {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.checkbox-span {
+  position: absolute;
+  border: 1px solid var(--light-grey);
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  left: 0;
+  top: 0;
+}
+.checkbox-icon {
+  position: relative;
+  transform: translateY(-50%);
+  opacity: 0;
+  margin-right: 8px;
+}
+.agree-icon {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox-icon:checked + .checkbox-span .agree-icon {
+  opacity: 1;
+}
+
 
 /*---------------------------------
           FOOTER

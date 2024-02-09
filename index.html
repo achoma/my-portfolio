@@ -202,24 +202,16 @@
   </section>
   <section id="contact" class="contact">
     <div class="container">
-      <div class="contact-content">
+      <div class="contact-span">
         <h2>contact</h2>
       </div>
-      <div>
-        <div class="backdrop " >
-          <div class="modal">
-            <form class="form-modal label-modal">
-              <p class="modal-text">
-                Leave your contacts and we will call you back
-              </p>
+      <div class="contact-content">
+        <div>
+            <form>
               <label for="name"
-                >Name
+                >Your Full Name
                 <div class="input-wrapper">
-                  <svg width="18px" height="24px">
-                    <use href="./images/icons.svg#icon-person-black-18dp-1" />
-                  </svg>
-    
-                  <input
+                   <input
                     class="box-input"
                     id="name"
                     type="text"
@@ -228,29 +220,11 @@
                   />
                 </div>
               </label>
-              <label for="phone"
-                >Phone
-                <div class="input-wrapper">
-                  <svg width="18px" height="24px">
-                    <use href="./images/icons.svg#icon-phone-black-18dp-1" />
-                  </svg>
-    
-                  <input
-                    class="box-input"
-                    id="phone"
-                    type="number"
-                    name="phone"
-                    required
-                  />
-                </div>
-              </label>
+             
               <label for="email"
                 >Email
                 <div class="input-wrapper">
-                  <svg width="18px" height="24px">
-                    <use href="./images/icons.svg#icon-email-black-18dp-1" />
-                  </svg>
-    
+   
                   <input
                     class="box-input"
                     id="email"
@@ -259,14 +233,26 @@
                     required
                   />
                 </div>
+              </label> 
+              <label for="phone"
+                >Subject
+                <div class="input-wrapper">
+   
+                  <input
+                    class="box-input"
+                    id="subject"
+                    type="test"
+                    name="subject"
+                    
+                  />
+                </div>
               </label>
               <label
-                >Comment<textarea
+                >Your Message<textarea
                   class="label-comment"
                   type="text"
                   name="comment"
-                  placeholder="Text input"
-                ></textarea>
+                 ></textarea>
               </label>
     
               <label for="accept" class="privacy">
@@ -289,11 +275,11 @@
               </label>
     
               <div class="button-sand">
-                <button class="button-modal" type="submit">Send</button>
+                <button class="button-modal" type="submit">Send Message</button>
               </div>
             </form>
-          </div>
         </div>
+        <div></div>
       </div>
     </div>
   </section>
