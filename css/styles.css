@@ -99,23 +99,30 @@
     display: flex;
     gap: 26px;    
   }
-  .sm div {
+  .hero-btn{
+    display: flex;
+    justify-content: center;
+margin: 0;
+padding: 0;
+  }
+  .sm div{
     background-color: var(--gold);
     border-radius: 50%;
     width: 40px;
     height: 40px;  
-    fill: var(--dark-green);      /*coś tu nie działa z kolorami*/
+      /*coś tu nie działa z kolorami*/
   }
   .sm svg {
     margin: 8px;
     width: 24px;
-    height: 24px; 
+    height: 24px;
+       fill: var(--dark-green);  
   }
 
   .sm div:focus,
   .sm div:hover{
     background-color: var(--dark);
-    fill: var(--gold);
+    fill: var(--gold);   
   }
 
   .sm div:hover {
@@ -143,6 +150,7 @@
     font-weight: 600;
     color: var(--gold);
     margin: 0;
+    text-align: center;
   }
   
   .hero h2 span {
@@ -155,11 +163,9 @@
     margin-top: 20px;
     line-height: 28px;
     margin-bottom: 10px;
+    text-align: center;
   }
   
-  .hero-btn a {
-    margin-right: 15px;
-  }
   
   .hero img {
     border-radius: 50%;
@@ -178,7 +184,7 @@
   .about-content {  
     margin-top: 80px;
     display: grid;
-    grid-template-columns: 0.3fr 0.7fr;
+    grid-template-columns: 0.35fr 0.65fr;
     gap: 60px;
   }
   
@@ -316,10 +322,21 @@
     padding: 50px 0;
     background-color: var(--dark-green);
   }
+  .contact-content {  
+    display: grid;
+    grid-template-columns:0.63fr 0.35fr ;
+    gap: 60px;
+  }
 .contact-span{
   margin-top: 80px;
 
 }
+.contact img {
+  width: 80%;
+  border:  solid var(--gold);
+  background-color: var(--light-grey);
+}
+
   .contact h2{
     font-size: 35px;
     font-weight: 700;
@@ -336,11 +353,7 @@
     color: var(--light-grey);
   }
 
-  .contact-content {  
-    display: grid;
-    grid-template-columns:0.6fr 0.4fr ;
-    gap: 60px;
-  }
+
 /*---------------------------------
           FORM
   ----------------------------------*/
@@ -357,6 +370,8 @@
   gap: 12px;
   padding-bottom: 12px;
 }
+
+
 
 .input-wrapper {
   display: flex;
@@ -412,6 +427,12 @@ textarea {
   margin-top: 8px;
   margin-bottom: 16px;
 }
+.privacy a{
+  color: var(--gold);
+}
+.privacy a:hover{
+  color: var(--green);
+}
 .checkbox-span {
   position: absolute;
   border: 1px solid var(--light-grey);
@@ -436,6 +457,16 @@ textarea {
   opacity: 1;
 }
 
+.button {
+  background-color:var(--gold);
+  padding: 6px 12px;
+  border-radius: 15px;
+  border: #ad9551;
+}
+.button:hover{
+  color: var(--gold);  
+  background-color:var(--dark);
+}
 
 /*---------------------------------
           FOOTER
