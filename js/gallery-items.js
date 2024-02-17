@@ -1,59 +1,24 @@
 export const galleryItems = [
   {
     preview:
-      './images/portfolio1.png',
+      './images/portfolio1.jpg',
     original:
-      './images/portfolio1.png',
-    description: 'Hokkaido Flower',
+      './images/portfolio1.jpg',
+    description: 'WebStudio - Effective Solutions for Your Business',
   },
   {
     preview:
-    './images/portfolio2.png',
+    './images/portfolio2.jpg',
     original:
-    './images/portfolio2.png',
-    description: 'Container Haulage Freight',
+    './images/portfolio2.jpg',
+    description: 'IceCream',
   },
   {
     preview:
-    './images/portfolio3.png',
+    './images/portfolio3.jpg',
     original:
-    './images/portfolio3.png',
-    description: 'Aerial Beach View',
+    './images/portfolio3.jpg',
+    description: 'Simply Chocolate',
   },
-  {
-    preview:
-    './images/portfolio4.png',
-    original:
-    './images/portfolio4.png',
-    description: 'Flower Blooms',
-  },
-  {
-    preview:
-    './images/portfolio5.png',
-    original:
-    './images/portfolio5.png',
-    description: 'Alpine Mountains',
-  },
-  {
-    preview:
-    './images/portfolio6.png',
-    original:
-    './images/portfolio6.png',
-    description: 'Alpine Mountains',
-  },
-  {
-    preview:
-    './images/portfolio7.png',
-    original:
-    './images/portfolio7.png',
-    description: 'Mountain Lake Sailing',
-  },
-  {
-    preview:
-    './images/portfolio8.png',
-    original:
-    './images/portfolio8.png',
-    description: 'Alpine Spring Meadows',
-  },
-  
+ 
 ];

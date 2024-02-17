@@ -86,7 +86,7 @@
   }
   nav a[href*="#contact"]:hover{
     color: var(--gold);  
-    background-color:var(--dark-green);
+    background-color:var(--dark);
     text-decoration: none;
   }
   
@@ -285,7 +285,6 @@ padding: 0;
   grid-gap: 12px;
   justify-content: center;
   padding: 0;
-  list-style: none;
   margin-left: auto;
   margin-right: auto;
 }
