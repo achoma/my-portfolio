@@ -54,7 +54,7 @@
   .header-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
   }
  
   
@@ -97,7 +97,8 @@
   .sm {
     padding-top: 30px;
     display: flex;
-    gap: 26px;    
+    gap: 26px;  
+    padding-left: 0;  
   }
   .hero-btn{
     display: flex;
@@ -331,7 +332,7 @@ padding: 0;
 
 }
 .contact img {
-  width: 80%;
+  width: 90%;
   border:  solid var(--gold);
   background-color: var(--light-grey);
 }
@@ -350,8 +351,30 @@ padding: 0;
     text-align: cent/er;
     padding-bottom: 15px;
     color: var(--light-grey);
-  }
 
+  }
+  .contact-item {
+        justify-content: flex-start;
+        padding-left: 0;
+        padding-top: 20px;
+margin: 0;
+
+  }
+  .contact-item li{ 
+    display: flex;
+    align-items: center;       
+    align-items: flex-end;
+    padding-left: 0;
+
+  }
+  .contact-item svg {
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+       fill: var(--gold);  
+       align-items: flex-start;
+       margin-left: 0;
+  }
 
 /*---------------------------------
           FORM

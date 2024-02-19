@@ -215,8 +215,8 @@
       </div>
       <div class="contact-content">
         <div>
-            <form>
-              <label for="name"
+            <form id="contactForm">
+              <label for="name" 
                 >Your Full Name
                 <div class="input-wrapper">
                    <input
@@ -229,7 +229,7 @@
                 </div>
               </label>
              
-              <label for="email"
+              <label for="email" 
                 >Email
                 <div class="input-wrapper">
    
@@ -242,7 +242,7 @@
                   />
                 </div>
               </label> 
-              <label for="phone"
+              <label for="phone" 
                 >Subject
                 <div class="input-wrapper">
    
@@ -287,14 +287,53 @@
               </div>
             </form>
         </div>
+        <div>
         <img src="images/my-photo2.jpg" alt="author image">
-          
+        <ul class="contact-item">
+          <li><svg >
+          <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+        </svg>
+        <p>+48 509 016 515</p></li>
+        <li><svg >
+          <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+        </svg> 
+        <p>aga.choma02@gmail.com</p></li>
+          </ul>
+          <ul class="sm">
+            <li>
+              <div >
+                <a href="mailto:aga.choma02@gmail.com">
+                  <svg >
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+    
+            <li>
+              <div >
+                <a href="https://github.com/achoma" target="_blank" rel="noreferrer noopener">
+                  <svg >
+                    <use href="./images/icons.svg#icon-Vector1"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+    
+            <li>
+              <div>
+                <a href="https://www.linkedin.com/in/agnieszka-choma-12a418282/" target="_blank" rel="noreferrer noopener">
+                  <svg >
+                    <use href="./images/icons.svg#icon-linkedin2"></use>
+                  </svg>
+                </a>
+              </div>
+            </li></ul>
+        </div>
         
       </div>
     </div>
-    <div>
-
-    </div>
+    
   </section>
   <footer>
     <div class="container">
@@ -311,5 +350,7 @@
   </script>
   <script src="js/gallery-items.js" type="module">  </script>
   <script src="js/index.js" type="module"></script>
+  <script src="js/server.js" type="module"></script>
+
 </body>
 </html>
