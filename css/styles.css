@@ -37,8 +37,8 @@
   a {
     text-decoration: none;
   }
-  li {
-    list-style: none;}
+  /* li {
+    list-style: none;} */
   ul {
     list-style: none;}
   /*---------------------------------
@@ -323,6 +323,7 @@ padding: 0;
     background-color: var(--dark-green);
   }
   .contact-content {  
+    padding-top: 40px;
     display: grid;
     grid-template-columns:0.63fr 0.35fr ;
     gap: 60px;
@@ -332,6 +333,7 @@ padding: 0;
 
 }
 .contact img {
+  margin: 20px 0;
   width: 90%;
   border:  solid var(--gold);
   background-color: var(--light-grey);
@@ -348,8 +350,8 @@ padding: 0;
     padding-bottom: 20px;
   }
   .contact p{
-    text-align: cent/er;
-    padding-bottom: 15px;
+    text-align: center;
+    padding-left: 10px;
     color: var(--light-grey);
 
   }
@@ -365,17 +367,26 @@ margin: 0;
     align-items: center;       
     align-items: flex-end;
     padding-left: 0;
-
-  }
-  .contact-item svg {
-    margin: 8px;
-    width: 40px;
-    height: 40px;
-       fill: var(--gold);  
-       align-items: flex-start;
-       margin-left: 0;
+padding-bottom: 24px;
   }
 
+  .contact-icon div{
+    background-color: var(--gold);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;  }
+
+    .contact-icon svg {
+      margin: 3px;
+      width: 24px;
+      height: 24px;
+         fill: var(--dark-green);  
+    }
+    .contact-icon div:focus,
+    .contact-icon div:hover{
+      background-color: var(--dark);
+      fill: var(--gold);   
+    }
 /*---------------------------------
           FORM
   ----------------------------------*/
@@ -389,7 +400,7 @@ margin: 0;
   font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0.48px;
-  gap: 12px;
+  gap: 8px;
   padding-bottom: 12px;
 }
 
@@ -501,4 +512,41 @@ textarea {
   }
   footer p{
     font-size: 14px;
+  }
+
+  /*---------------------------------
+          PRIVACY
+----------------------------------*/
+
+.policy {
+  padding: 50px 0;
+  background-color:var(--light-grey);
+}
+
+.policy span{
+  margin-top: 80px;
+  font-weight: 700;
+
+}
+
+  .policy h2{
+    font-size: 35px;
+    font-weight: 700;
+    margin: 20px 0px;
+    text-align: center;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+  }
+  .policy p{
+    padding-bottom: 15px;
+    color: var(--dark);
+  }
+  .policy li{
+    padding-bottom: 15px;
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
   }
