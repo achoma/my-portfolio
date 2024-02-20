@@ -1,18 +1,13 @@
-function sendEmail() {
-    var formData = new FormData(document.getElementById("contactForm"));
+document.getElementById('.contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var comment = document.getElementById('comment').value;
 
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "./server.php", true); // Tutaj podaj adres URL Twojego skryptu obsługującego wysyłkę e-maila
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-            alert("Wiadomość została wysłana.");
-            document.getElementById("contactForm").reset();
-        } else {
-            alert("Wystąpił błąd podczas wysyłania wiadomości.");
-        }
-    };
-    xhr.onerror = function() {
-        alert("Wystąpił błąd podczas wysyłania wiadomości.");
-    };
-    xhr.send(formData);
-}
+
+    var mailto_link = 'mailto:aga.choma02@gmail.com?message=Wiadomość ze strony&body=Imię: ' + name + '%0D%0AE-mail: ' + email + '%0D%0AWiadomość: ' + message;
+
+    window.open(mailto_link);
+});
