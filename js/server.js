@@ -1,4 +1,4 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
+document.getElementById('#contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Zatrzymaj domyślne zachowanie formularza
   
     let formData = new FormData(this);
