@@ -69,7 +69,7 @@
             <span>Jestem</span> Agnieszka<br>
              <span>Front-end Developer</span>
           </h2>
-          <p >początkująca programistka <br/>z pasją do tworzenia i eksplorowania nowych technologii. <br/>
+          <p >początkująca programistka z pasją <br/>do tworzenia i eksplorowania nowych technologii. <br/>
             Witam Cię serdecznie na mojej stronie internetowej,
              gdzie dzielę się swoimi projektami, umiejętnościami </p>
           <p>Zapraszam Cię do śledzenia mojej drogi w świecie kodu!</p>
@@ -299,10 +299,9 @@
                     <svg class="agree-icon" width="16px" height="16px">
                       <use href="./images/icons.svg#icon-Property-1click" />
                     </svg>
-                  </span>
-    
+                  </span>   
                   Akceptuję warunki
-                  <a href="privacy.html">Polityki Prywatności</a>
+                  <a data-modal-open>Polityki Prywatności</a>
                 </div>
               </label>
     
@@ -341,8 +340,47 @@
         
       </div>
     </div>
-    
   </section>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="button-close" data-modal-close>
+        <svg width="8px" height="8px">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <div class="policy "><h2>Polityka prywatności</h2>
+        <div class="policy-box"><p>Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych przekazywanych przez użytkowników podczas korzystania z formularza kontaktowego na naszej stronie internetowej. Dbamy o Twoją prywatność i podejmujemy wszelkie niezbędne działania w celu zapewnienia bezpieczeństwa oraz poufności Twoich danych osobowych.
+    </p>
+        <ol>
+            <li>
+        <span>Cel zbierania danych:</span> Dane osobowe przekazane nam poprzez formularz kontaktowy będą wykorzystywane jedynie w celu umożliwienia nam odpowiedzi na Twoje zapytanie lub umożliwienia kontaktu w odpowiedzi na Twoje zgłoszenie.
+        </li>
+        <li><span>Podstawy prawne:</span> Przetwarzanie Twoich danych osobowych będzie opierało się na Twojej wyraźnej zgodzie udzielonej poprzez wypełnienie formularza kontaktowego i akceptację tej polityki prywatności.
+    </li>
+    <li><span>RODO:</span> Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE</li>
+       <li><span> Zakres danych:</span>
+    W ramach formularza kontaktowego mogą być zbierane następujące dane osobowe: imię, nazwisko oraz adres e-mail.
+    </li> 
+    <li>  <span>Przekazywanie danych:</span> Twoje dane osobowe nie będą udostępniane stronom trzecim bez Twojej wyraźnej zgody, chyba że jest to konieczne do realizacji usług świadczonych przez Administratora lub zgodnie z obowiązującymi przepisami prawa.
+    </li>
+        <li><span>Bezpieczeństwo danych:</span> Dbamy o bezpieczeństwo Twoich danych osobowych i stosujemy odpowiednie środki techniczne i organizacyjne, aby chronić je przed nieuprawnionym dostępem, utratą, uszkodzeniem lub nieautoryzowanym ujawnieniem.
+    </li>
+        <li><span>Przechowywanie danych:</span> Twoje dane osobowe będą przechowywane przez okres niezbędny do osiągnięcia celów, dla których zostały zebrane, chyba że obowiązujące przepisy prawne wymagają dłuższego przechowywania.
+    </li>
+        <li><span>Twoje prawa:</span> Masz prawo do dostępu do swoich danych osobowych, ich poprawiania, usunięcia lub ograniczenia przetwarzania. Masz również prawo do wycofania udzielonej zgody w dowolnym momencie.
+    </li>
+        <li><span>Kontakt:</span> W przypadku pytań dotyczących naszej polityki prywatności lub przetwarzania Twoich danych osobowych zachęcamy do kontaktu z nami pod adresem [adres e-mail lub numer telefonu].
+    </li>
+      </ol>
+      <p>  Korzystając z formularza kontaktowego na naszej stronie internetowej, akceptujesz warunki niniejszej Polityki Prywatności.</p>
+        
+       <p> Niniejsza polityka prywatności może być okresowo aktualizowana. Zalecamy regularne sprawdzanie naszej strony internetowej w celu zapoznania się z najnowszą wersją polityki prywatności
+    </p></div></div>
+      
+    </div>
+  </div>
+
+
   <footer>
     <div class="container">
       <p>&copy; 2024 Copyright <b>Agnieszka Choma</b> All Rights Reserved</p>
@@ -359,6 +397,7 @@
   <script src="js/gallery-items.js" type="module">  </script>
   <script src="js/index.js" type="module"></script>
   <script src="js/server.js" type="module"></script>
+  <script src="js/modal.js"></script>
 
 </body>
 </html>
