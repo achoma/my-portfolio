@@ -1,3 +1,4 @@
+// ----------------- Sending messages from a form------------------------------------------
 const form = document.getElementById('contactForm');
 
         form.addEventListener('submit', async (event) => {
@@ -19,3 +20,4 @@ const form = document.getElementById('contactForm');
                 alert('Oops! There was a problem sending your message. Please try again later.');
             }
         });
+

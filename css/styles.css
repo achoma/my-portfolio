@@ -37,8 +37,7 @@
   a {
     text-decoration: none;
   }
-  /* li {
-    list-style: none;} */
+
   ul {
     list-style: none;}
   /*---------------------------------
@@ -89,6 +88,9 @@
     background-color:var(--dark);
     text-decoration: none;
   }
+  .lang img{
+   padding: 2px;
+margin: 4;    }
   
   /*---------------------------------
           SM-ICONS
