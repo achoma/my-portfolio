@@ -15,12 +15,23 @@
   body {
     font-family: "Roboto", sans-serif;
   }
-  
+
   .container {
-    max-width: 1200px;
+    max-width: 428px;
     margin: auto;
     padding: 0 20px;
   }
+  @media screen and (min-width: 768px){
+    .container{
+      max-width: 768px;
+    }
+  }
+  @media screen and (min-width: 1200px){
+    .container{
+      max-width: 1200px;  /* ??????????????????????????*/
+    }
+  }
+
   p {
     color: var(--dark);
     font-size: 18px;
@@ -99,17 +110,33 @@ margin: 4;    }
   ----------------------------------*/
 
   .sm {
-    padding-top: 30px;
     display: flex;
     gap: 26px;  
     padding-left: 0;  
   }
-  .hero-btn{
-    display: flex;
-    justify-content: center;
-margin: 0;
-padding: 0;
+  .hero-btn1{
+    display: none;
   }
+
+  @media screen and (min-width: 1200px){
+    .hero-btn1{
+      display: flex;
+      justify-content: center;
+  margin: 0;
+  padding: 0;
+    }}
+
+    .hero-btn2{
+      display: flex;
+      justify-content: center;
+  margin-top: 0;
+ }
+  @media screen and (min-width: 1200px){
+    .hero-btn2{
+      display: none;
+    }
+  }
+
   .sm div{
     background-color: var(--gold);
     border-radius: 50%;
@@ -137,17 +164,38 @@ padding: 0;
   .hero {
     padding: 50px 0;
     background-color:var(--dark-green);
+    align-items: center;
   }
   
   .hero-content {
+    padding-top: 40px;
+    margin-top: 24px;
+    place-items: center;
+    gap: 30px;
+    display: grid;
+
+  }
+  @media screen and (min-width: 768px){
+    .hero-content {
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: 0.5fr 0.5fr;
+      place-items: center;
+      gap: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px){
+  .hero-content {
     margin-top: 95px;
+    padding-top: 0;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
     place-items: center;
     gap: 30px;
-  }
-  
-  .hero h2 {padding-top: 50px;
+  }}
+  .hero h2 {
+    /* border: solid greenyellow; */
+    /* padding-top: 50px; */
     font-size: 48px;
     line-height: 1.2;
     font-weight: 600;
@@ -160,41 +208,93 @@ padding: 0;
     font-weight: 400;
   }
   
-  .hero p {
+  .hero-text-item {
+    color: var(--light-grey);
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 28px;
+    margin-bottom: -20px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px){
+    .hero-text-item{
+      display: none;
+    }
+  }
+  .hero-text{
     color: var(--light-grey);
     font-size: 18px;
     margin-top: 20px;
     line-height: 28px;
     margin-bottom: 10px;
     text-align: center;
+    display: none;
   }
-  
-  
-  .hero img {
+  @media screen and (min-width: 1200px){
+    .hero-text{
+      display: flex;
+      text-align: center;}}
+
+  .photo-1 {
+    display: none;
     border-radius: 50%;
     width: 80%;
     border: 4px solid var(--gold);
-    background-color: var(--light-grey);
   }
-  
+  @media screen and (min-width: 1200px){ 
+    .photo-1 {
+    display: flex;
+    width: 80%;
+  }}
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    .photo-1{
+      display: flex;
+      width: 100%;
+    }
+  }
+  .photo-box{    display: flex;
+    justify-content: center;
+  padding: 10px;}
+
+    .photo-2 {     
+    border-radius: 50%;
+    width: 100%;
+    border: 4px solid var(--gold);
+margin-top: 20px;  }
+  @media screen and (min-width: 768px){
+    .photo-2{
+      display: none;
+    }
+  }
+
   /*---------------------------------
           ABOUT
   ----------------------------------*/
-  .about {
+  /* .about {
     padding: 50px 0;
-  }
+  } */
   
+  .about-content {  padding-top: 40px;
+    margin-top: 24px;
+    display: flex;
+  }
+  @media screen and (min-width: 1200px){
   .about-content {  
     margin-top: 80px;
     display: grid;
     grid-template-columns: 0.35fr 0.65fr;
     gap: 60px;
-  }
-  
-  .about-content img {
+  }}
+
+  @media screen and (min-width: 768px){}
+  .about-content img {display: none;
     width: 100%;
   }
-  
+  @media screen and (min-width: 1200px){
+  .about-content img {
+    display: flex;
+    width: 100%;
+  }}
   .about h2 {
     font-size: 35px;
     font-weight: 700;
