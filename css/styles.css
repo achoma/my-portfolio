@@ -456,6 +456,7 @@ margin: 4;    }
 
   .about-content { 
    padding-top: 40px;
+   padding-bottom: 48px;
     display: flex;
   }
   @media screen and (min-width: 1200px){
@@ -564,6 +565,7 @@ fill: var(--light-grey);
 }
 .portfolio-content {  
   margin-top: 80px;
+  padding-bottom: 48px;
 }
 :root {
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
