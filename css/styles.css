@@ -1,6 +1,7 @@
 :root {
     --dark:#000503;
     --gold:#ad9551;
+    --dark-gold: #9D8953;
     --dark-green: #07271A; 
     --green:#2B6B51;
     --light-green:#3E8468;
@@ -358,7 +359,12 @@ margin: 4;    }
     place-items: center;
     gap: 30px;
   }}
-  .hero h2 {
+  @media screen and (min-width: 1200px){
+    .hero-content div{
+   margin-bottom: -20px;
+    }}
+
+  .hero h1 {
     font-size: 48px;
     line-height: 1.2;
     font-weight: 600;
@@ -367,7 +373,7 @@ margin: 4;    }
     text-align: center;
   }
   
-  .hero h2 span {
+  .hero h1 span {
     font-weight: 400;
   }
   
@@ -385,16 +391,16 @@ margin: 4;    }
     }
   }
   .hero-text{
-    color: var(--light-grey);
+   
+    display: none;
+  }
+  @media screen and (min-width: 1200px){
+    .hero-text{ color: var(--light-grey);
     font-size: 18px;
     margin-top: 20px;
     line-height: 28px;
     margin-bottom: 10px;
     text-align: center;
-    display: none;
-  }
-  @media screen and (min-width: 1200px){
-    .hero-text{
       display: flex;
       text-align: center;}}
 
@@ -464,7 +470,7 @@ margin: 4;    }
     margin-top: 80px;
     display: grid;
     grid-template-columns: 0.35fr 0.65fr;
-    gap: 60px;
+    gap: 40px;
   }}
 
   @media screen and (min-width: 768px){}
@@ -482,7 +488,19 @@ margin: 4;    }
     margin: 20px 0px;
     color: var(--dark-green);
   }
-
+   .about h5{color: var(--gold);
+    font-weight: 400;
+    text-shadow: 
+            -1px -1px 0 var(--dark-gold),  
+            1px -1px 0 var(--dark-gold),
+            -1px 1px 0 var(--dark-gold),
+            1px 1px 0 var(--dark-gold); ;
+  }
+  @media screen and (min-width: 1200px){ 
+  .about h5{
+    text-shadow:none;
+    font-weight: 800;
+  }}
   
 /*---------------------------------
           SKILS
