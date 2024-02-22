@@ -187,6 +187,7 @@ margin: 4;    }
     padding-top: 18px;
     padding-left: 0;  
     margin-left: 0;
+    padding-bottom: 20px;
   }
   .sm-mobile div{
     background-color: var(--green);
@@ -686,7 +687,7 @@ margin: 0
 @media screen and (min-width: 1200px){ 
  
   .contact-box1{
- margin-left: -190px;
+ margin-left: -100px;
  margin-right: 100px;
   ;}}
 
@@ -738,12 +739,12 @@ padding-top: 36px;}
   margin: 0;
 }
 .form{
-  width: 100%;
+  width: 140%;
     margin: 0;
 }
 @media screen and (min-width: 768px){ 
 .form{
-  width: 190%;
+  width: 160%;
    }}
    @media screen and (min-width: 1200px){ 
     .form{
