@@ -58,8 +58,101 @@
             </div>
           </ul>
        </nav>
+       <button type="button"
+       class=" menu-toggle js-open-menu"
+               aria-expanded="false"
+        aria-controls="mobile-menu">
+      <svg class="hamburger-icon">
+        <use href="./images/icons.svg#icon-menu">  </use>
+      </svg></button>
       </div>
     </div>
+
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+      <svg width="8px" height="8px">
+                  <use href="./images/icons.svg#icon-cross"></use>
+                </svg>
+      </button>
+      <div class="mobile-menu">
+      <ul class="menu-mobile ">
+        <div class="lang">
+          <div><a href="index.html"><img 
+            src="images/flag-poland.png"
+            alt="author logo"
+            width="45"/></a>
+          </div>
+          <div> <a href="index-en.html"><img 
+            src="images/flag-uk.png"
+            alt="author logo"
+            width="45"/></a>
+          </div>
+        </div>
+        <li><a href="#home">Strona główna</a></li>
+        <li><a href="#about">O mnie</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+      <div class="menu-mobile-item">
+        <ul class="contact-item-mobile contact-mobile-icon">
+          <li>
+            <div >
+              <a href="tel:+48509016515">
+                <svg >
+                  <use href="./images/icons.svg#icon-phone-black-18dp-1" 
+                  
+                  ></use>
+                </svg>
+              </a>
+            </div>
+        <p>+48 509 016 515</p></li>
+        <li>
+          <div >
+            <a href="mailto:aga.choma02@gmail.com">
+              <svg >
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg> 
+            </a>
+          </div>
+          
+        <p>aga.choma02@gmail.com</p></li>
+          </ul>
+                 <div class="hero-btn2">
+                  <ul class="sm-mobile">
+                      <li>
+                        <div >
+                          <a href="mailto:aga.choma02@gmail.com">
+                            <svg >
+                              <use href="./images/icons.svg#icon-Vector"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </li>
+        
+                      <li>
+                        <div >
+                          <a href="https://github.com/achoma" target="_blank" rel="noreferrer noopener">
+                            <svg >
+                              <use href="./images/icons.svg#icon-Vector1"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </li>
+        
+                      <li>
+                        <div>
+                          <a href="https://www.linkedin.com/in/agnieszka-choma-12a418282/" target="_blank" rel="noreferrer noopener">
+                            <svg >
+                              <use href="./images/icons.svg#icon-linkedin2"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </li></ul>
+                </div>
+      </div>
+      </div>
+      
   </header>
   <section id="home" class="hero">
     <div class="container">
@@ -462,7 +555,8 @@
   <script src="js/gallery-items.js" type="module">  </script>
   <script src="js/index.js" type="module"></script>
   <script src="js/server.js" type="module"></script>
-  <script src="js/modal.js"></script>
+  <script src="js/modal.js"></script>  
+  <script src="js/mobile-menu.js"></script>
 
 </body>
 </html>
