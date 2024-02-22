@@ -58,21 +58,115 @@
               </div>
             </ul>
          </nav>
+         <button type="button"
+         class=" menu-toggle js-open-menu"
+                 aria-expanded="false"
+          aria-controls="mobile-menu">
+        <svg class="hamburger-icon">
+          <use href="./images/icons.svg#icon-menu">  </use>
+        </svg></button>
         </div>
       </div>
+
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+        <svg width="8px" height="8px">
+                    <use href="./images/icons.svg#icon-cross"></use>
+                  </svg>
+        </button>
+        <div class="mobile-menu">
+        <ul class="menu-mobile ">
+          <div class="lang">
+            <div><a href="index.html"><img 
+              src="images/flag-poland.png"
+              alt="author logo"
+              width="45"/></a>
+            </div>
+            <div> <a href="index-en.html"><img 
+              src="images/flag-uk.png"
+              alt="author logo"
+              width="45"/></a>
+            </div>
+          </div>
+          <li><a class="js-close-menu" href="#home">Home</a></li>
+          <li><a class="js-close-menu" href="#about">About</a></li>
+          <li><a class="js-close-menu" href="#portfolio">Portfolio</a></li>
+          <li><a class="js-close-menu" href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-mobile-item">
+          <ul class="contact-item-mobile contact-mobile-icon">
+            <li>
+              <div >
+                <a href="tel:+48509016515">
+                  <svg >
+                    <use href="./images/icons.svg#icon-phone-black-18dp-1" 
+                    
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+          <p>+48 509 016 515</p></li>
+          <li>
+            <div>
+              <a href="mailto:aga.choma02@gmail.com">
+                <svg >
+                  <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                </svg> 
+              </a>
+            </div>
+            
+          <p>aga.choma02@gmail.com</p></li>
+            </ul>
+                   <div class="hero-btn2">
+                    <ul class="sm-mobile">
+                        <li>
+                          <div >
+                            <a href="mailto:aga.choma02@gmail.com">
+                              <svg >
+                                <use href="./images/icons.svg#icon-Vector"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </li>
+          
+                        <li>
+                          <div >
+                            <a href="https://github.com/achoma" target="_blank" rel="noreferrer noopener">
+                              <svg >
+                                <use href="./images/icons.svg#icon-Vector1"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </li>
+          
+                        <li>
+                          <div>
+                            <a href="https://www.linkedin.com/in/agnieszka-choma-12a418282/" target="_blank" rel="noreferrer noopener">
+                              <svg >
+                                <use href="./images/icons.svg#icon-linkedin2"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </li></ul>
+                  </div>
+        </div>
+        </div>
+    
     </header>
-  <section id="home" class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <div>
-          <h2 >
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div>
+            <h2 >
             <span>I'm</span> Agnieszka<br>
              <span>a Front-End Developer</span>
           </h2>
-          <p>beginner programmer  with a passion <br/>for creating and exploring new technologies. <br/>
-            Welcome to my website, where I share my projects and skills.</p>
-          <p>I invite you to follow along on my journey in the world of code!</p>
-          <div class="hero-btn">
+          <p class="hero-text" >beginner programmer  with a passion <br/>for creating and exploring new technologies. <br/>
+            Welcome to my website, where I 
+            share my projects and skills.<br/><br/>
+          I invite you to follow along on my journey in the world of code!</p>
+          <div class="hero-btn1">
             <ul class="sm">
                 <li>
                   <div >
@@ -106,8 +200,45 @@
           </div>
         </div>
   
-        <img src="images/my-photo1.jpg" alt="author image">
+        <img class="photo-1" src="images/my-photo1.jpg" alt="author image">
       </div>
+      <p class="hero-text-item"  >beginner programmer  with a passion <br/>for creating and exploring new technologies. <br/>
+        Welcome to my website, where I 
+        share my projects and skills.<br/><br/>
+        I invite you to follow along on my journey in the world of code!</p>
+        <div class="photo-box"><img class="photo-2" src="images/my-photo1.jpg" alt="author image"></div>
+        <div class="hero-btn2">
+          <ul class="sm">
+              <li>
+                <div >
+                  <a href="mailto:aga.choma02@gmail.com">
+                    <svg >
+                      <use href="./images/icons.svg#icon-Vector"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div >
+                  <a href="https://github.com/achoma" target="_blank" rel="noreferrer noopener">
+                    <svg >
+                      <use href="./images/icons.svg#icon-Vector1"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <a href="https://www.linkedin.com/in/agnieszka-choma-12a418282/" target="_blank" rel="noreferrer noopener">
+                    <svg >
+                      <use href="./images/icons.svg#icon-linkedin2"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li></ul>
+        </div>
     </div>
   </section>
   <section id="about" class="about">
@@ -132,15 +263,7 @@ thereby affording users a seamless and gratifying browsing experience. <br />
 I am open to new challenges and continually strive to enhance my skills. My aim is not only to craft code but also to create experiences that transmute web browsers into magical gateways to the world. <br />
 Are you ready to embark on this journey with me? <br />
 Let's create something magnificent together!</p>
-  
-          <div class="about-social">
-            <ul>
-              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fab fa-x-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
           </div>
-        </div>
   
       </div>
     </div>
@@ -233,11 +356,13 @@ Let's create something magnificent together!</p>
     <div class="container">
       <div class="contact-span">
         <h2>contact</h2>
-        <p>I am open to new projects and collaboration opportunities. If you're in need of a front-end developer, someone passionate about crafting valuable online products, I am eager to take on the challenge. Whether you're interested in collaboration or simply wish to share your ideas, feel free to reach out. I am keen on connecting with new individuals in the industry and would appreciate any opportunity for growth and learning. <br/>
+        <p>I am open to new projects and collaboration opportunities. 
+          If you're in need of a front-end developer, someone passionate about crafting 
+          valuable online products, I am eager to take on the challenge. Whether you're interested in collaboration or simply wish to share your ideas, feel free to reach out. I am keen on connecting with new individuals in the industry and would appreciate any opportunity for growth and learning. <br/>
           Let's stay in touch and create something remarkable together in the realm of coding!</p>
       </div>
       <div class="contact-content">
-        <div>
+        <div class="form">
             <form id="contactForm" action="https://formspree.io/f/xqkrqoap" method="POST">
               <label for="name" 
                 >Your Full Name
@@ -299,9 +424,8 @@ Let's create something magnificent together!</p>
                       <use href="./images/icons.svg#icon-Property-1click" />
                     </svg>
                   </span>
-    
-                  I accept the terms and conditions of the
-                  <a >Privacy Policy</a>
+                      I accept the terms and conditions of the
+                  <a data-modal-open>Privacy Policy</a>
                 </div>
               </label>
     
@@ -310,38 +434,103 @@ Let's create something magnificent together!</p>
               </div>
             </form>
         </div>
-        <div>
-        <img src="images/my-photo2.jpg" alt="author image">
-        <ul class="contact-item contact-icon">
+        <div class="contact-box1">
+          <img src="images/my-photo2.jpg" alt="author image">
+          <ul class="contact-item contact-icon">
+            <li>
+              <div >
+                <a href="tel:+48509016515">
+                  <svg >
+                    <use href="./images/icons.svg#icon-phone-black-18dp-1" 
+                    
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+          <p>+48 509 016 515</p></li>
           <li>
             <div >
-              <a href="tel:+48509016515">
+              <a href="mailto:aga.choma02@gmail.com">
                 <svg >
-                  <use href="./images/icons.svg#icon-phone-black-18dp-1" 
-                  
-                  ></use>
-                </svg>
+                  <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                </svg> 
               </a>
             </div>
-        <p>+48 509 016 515</p></li>
-        <li>
-          <div >
-            <a href="mailto:aga.choma02@gmail.com">
-              <svg >
-                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-              </svg> 
-            </a>
+            
+          <p>aga.choma02@gmail.com</p></li>
+            </ul>
+            
           </div>
           
-        <p>aga.choma02@gmail.com</p></li>
-          </ul>
-          
         </div>
-        
+        <div class="contact-box2">
+          <img src="images/my-photo2.jpg" alt="author image">
+          <ul class="contact-item contact-icon">
+            <li>
+              <div >
+                <a href="tel:+48509016515">
+                  <svg >
+                    <use href="./images/icons.svg#icon-phone-black-18dp-1" 
+                    
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+          <p>+48 509 016 515</p></li>
+          <li>
+            <div >
+              <a href="mailto:aga.choma02@gmail.com">
+                <svg >
+                  <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                </svg> 
+              </a>
+            </div>
+            
+          <p>aga.choma02@gmail.com</p></li>
+            </ul>
+            
+          </div>
+          
       </div>
-    </div>
-    
   </section>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="button-close" data-modal-close>
+        <svg width="8px" height="8px">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <div class="policy "><h2>Polityka prywatności</h2>
+        <div class="policy-box"><p>Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych przekazywanych przez użytkowników podczas korzystania z formularza kontaktowego na naszej stronie internetowej. Dbamy o Twoją prywatność i podejmujemy wszelkie niezbędne działania w celu zapewnienia bezpieczeństwa oraz poufności Twoich danych osobowych.
+    </p>
+        <ol>
+            <li>
+        <span>Cel zbierania danych:</span> Dane osobowe przekazane nam poprzez formularz kontaktowy będą wykorzystywane jedynie w celu umożliwienia nam odpowiedzi na Twoje zapytanie lub umożliwienia kontaktu w odpowiedzi na Twoje zgłoszenie.
+        </li>
+        <li><span>Podstawy prawne:</span> Przetwarzanie Twoich danych osobowych będzie opierało się na Twojej wyraźnej zgodzie udzielonej poprzez wypełnienie formularza kontaktowego i akceptację tej polityki prywatności.
+    </li>
+    <li><span>RODO:</span> Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE</li>
+       <li><span> Zakres danych:</span>
+    W ramach formularza kontaktowego mogą być zbierane następujące dane osobowe: imię, nazwisko oraz adres e-mail.
+    </li> 
+    <li>  <span>Przekazywanie danych:</span> Twoje dane osobowe nie będą udostępniane stronom trzecim bez Twojej wyraźnej zgody, chyba że jest to konieczne do realizacji usług świadczonych przez Administratora lub zgodnie z obowiązującymi przepisami prawa.
+    </li>
+        <li><span>Bezpieczeństwo danych:</span> Dbamy o bezpieczeństwo Twoich danych osobowych i stosujemy odpowiednie środki techniczne i organizacyjne, aby chronić je przed nieuprawnionym dostępem, utratą, uszkodzeniem lub nieautoryzowanym ujawnieniem.
+    </li>
+        <li><span>Przechowywanie danych:</span> Twoje dane osobowe będą przechowywane przez okres niezbędny do osiągnięcia celów, dla których zostały zebrane, chyba że obowiązujące przepisy prawne wymagają dłuższego przechowywania.
+    </li>
+        <li><span>Twoje prawa:</span> Masz prawo do dostępu do swoich danych osobowych, ich poprawiania, usunięcia lub ograniczenia przetwarzania. Masz również prawo do wycofania udzielonej zgody w dowolnym momencie.
+    </li>
+        <li><span>Kontakt:</span> W przypadku pytań dotyczących naszej polityki prywatności lub przetwarzania Twoich danych osobowych zachęcamy do kontaktu z nami pod adresem [adres e-mail lub numer telefonu].
+    </li>
+      </ol>
+      <p>  Korzystając z formularza kontaktowego na naszej stronie internetowej, akceptujesz warunki niniejszej Polityki Prywatności.</p>
+        
+       <p> Niniejsza polityka prywatności może być okresowo aktualizowana. Zalecamy regularne sprawdzanie naszej strony internetowej w celu zapoznania się z najnowszą wersją polityki prywatności
+    </p></div></div>
+      
+    </div>
+  </div>
   <footer>
     <div class="container">
       <p>&copy; 2024 Copyright <b>Agnieszka Choma</b> All Rights Reserved</p>
@@ -358,7 +547,8 @@ Let's create something magnificent together!</p>
   <script src="js/gallery-items.js" type="module">  </script>
   <script src="js/index.js" type="module"></script>
   <script src="js/server.js" type="module"></script>
-  <script src="js/modal.js"></script>
+  <script src="js/modal.js"></script>  
+  <script src="js/mobile-menu.js"></script>
 
 </body>
 </html>
