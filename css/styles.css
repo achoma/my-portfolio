@@ -109,6 +109,10 @@ nav {
   .lang img{
    padding: 2px;
 margin: 4;    }
+.lang img:focus,
+.lang img:hover{
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
   
   /*---------------------------------
           MOBILE MENU
@@ -584,6 +588,9 @@ fill: var(--light-grey);
 .portfolio-content {  
   margin-top: 80px;
   padding-bottom: 48px;
+}
+.portfolio-content span{  
+  display: none;
 }
 :root {
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
