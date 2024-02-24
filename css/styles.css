@@ -828,9 +828,8 @@ textarea {
   justify-content: center;
   margin-top: 8px;
   margin-bottom: 16px;}
-.privacy input{
-  padding: 0;
-}
+
+
 .privacy label{
 
 display: inline;
@@ -843,30 +842,6 @@ align-items: center;
 .privacy a:hover{
   color: var(--green);
 }
-/* .checkbox-span {
-  position: absolute;
-  border: 1px solid var(--light-grey);
-  border-radius: 2px;
-  width: 16px;
-  height: 16px;
-  display: flex;
-  left: 0;
-  top: 0;
-}
-.checkbox-icon {
-  position: relative;
-  transform: translateY(-50%);
-  opacity: 0;
-  margin-right: 8px;
-}
-.agree-icon {
-  position: absolute;
-  opacity: 0;
-}
-.checkbox-icon:checked + .checkbox-span .agree-icon {
-  opacity: 1;
-} */
-
 .button {display: flex;
   justify-content: center;
   background-color:var(--gold);
