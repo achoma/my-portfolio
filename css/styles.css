@@ -824,12 +824,18 @@ textarea {
   border: 1px solid var(--green);
 }
 
-.privacy {
-  display: flex;
+.privacy{  display: flex;
   justify-content: center;
-  position: relative;
   margin-top: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 16px;}
+.privacy input{
+  padding: 0;
+}
+.privacy label{
+
+display: inline;
+margin-left: 6px;
+align-items: center;
 }
 .privacy a{
   color: var(--gold);
@@ -837,7 +843,7 @@ textarea {
 .privacy a:hover{
   color: var(--green);
 }
-.checkbox-span {
+/* .checkbox-span {
   position: absolute;
   border: 1px solid var(--light-grey);
   border-radius: 2px;
@@ -859,7 +865,7 @@ textarea {
 }
 .checkbox-icon:checked + .checkbox-span .agree-icon {
   opacity: 1;
-}
+} */
 
 .button {display: flex;
   justify-content: center;
@@ -867,6 +873,7 @@ textarea {
   padding: 6px 12px;
   border-radius: 15px;
   border: #ad9551;
+  margin-top: 8px;
 }
 .button:hover{
   color: var(--gold);  

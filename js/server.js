@@ -21,7 +21,3 @@ const form = document.getElementById('contactForm');
             }
         });
 
-
-
-
-        
