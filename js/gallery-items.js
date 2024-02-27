@@ -20,5 +20,11 @@ export const galleryItems = [
     './images/portfolio3.jpg',
     description: 'Simply Chocolate',
   },
- 
+  {
+    preview:
+    './images/portfolio4.jpg',
+    original:
+    './images/portfolio4.jpg',
+    description: 'Cats Breeds',
+  },
 ];
