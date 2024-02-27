@@ -521,7 +521,7 @@ margin: 4;    }
   @media screen and (min-width: 1200px){ 
   .skils-content {   
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-columns: 0.6fr 0.4fr;
   } }
   .skils h2{
     font-size: 35px;
@@ -544,19 +544,23 @@ margin: 4;    }
 
   .skils-item p {
     font-size: 16px;
-    margin-top: 8px;
     color: var(--light-grey);
   }
-  
+  .skils-item li{display: block;
+ justify-content: center;
+
+    flex-direction: column;
+
+}
   .skils-item ul{  
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     flex-shrink: 0;
-    /* row-gap: 48px; */
     column-gap: 24px;
     margin-left: -40px;
   }
+
 .skils-item svg{
     width: 48px;
     height: 48px; 
