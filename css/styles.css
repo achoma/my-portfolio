@@ -485,6 +485,7 @@ margin: 4;    }
   .about-content img {
     display: flex;
     width: 100%;
+    border-radius: 15px;
   }}
   .about h2 {
     font-size: 35px;
