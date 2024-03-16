@@ -4,7 +4,8 @@ const images = galleryItems.map(({ preview, original, description, href }) => {
   return `<li>
         <div class="gallery__item">
             <a class="gallery__item" href="${original}">
-               <img class="gallery__image" src="${preview}" alt="<a href=${href} target=_blank rel=noreferrer noopener><p class=gallery__text> <span>Show more</span>    ${description}</p></> " />
+               <img class="gallery__image" src="${preview}" alt="<a href=${href} target=_blank rel=noreferrer noopener>
+               <p class=gallery__text> <span>Show more</span>    ${description}</p></> " />
             </a>
         </div> </li>`;
 });
