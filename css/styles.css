@@ -513,14 +513,17 @@ nav a[href*="#contact"]:hover {
 }
 .about h5 {
   color: var(--gold);
-  font-weight: 400;
-  text-shadow: -1px -1px 0 var(--dark-gold), 1px -1px 0 var(--dark-gold),
-    -1px 1px 0 var(--dark-gold), 1px 1px 0 var(--dark-gold);
+  font-weight: 800;
+  background-color: var(--dark-green);
+  padding: 10px;
+  border-radius: 5px;
 }
 @media screen and (min-width: 1200px) {
   .about h5 {
     text-shadow: none;
     font-weight: 800;
+    background-color: transparent;
+    padding: 0;
   }
 }
 
@@ -668,7 +671,7 @@ nav a[href*="#contact"]:hover {
 
 .gallery__text :focus,
 .gallery__text :hover {
-  color: var(--dark);
+  color: var(--light-grey);
   background-color: var(--green);
   border: 1px solid var(--dark);
   box-shadow: inset 1px 1px 10px var(--green-grey);
