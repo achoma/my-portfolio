@@ -20,6 +20,6 @@ export const galleryItems = [
     preview: "./images/portfolio1.png",
     original: "./images/portfolio1.png",
     description: "Cats Breeds",
-    href: "https://achoma.github.io/goit-js-hw-10/",
+    href: "https://achoma.github.io/the-cats-breeds/",
   },
 ];
