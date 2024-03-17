@@ -22,4 +22,10 @@ export const galleryItems = [
     description: "Cats Breeds",
     href: "https://achoma.github.io/the-cats-breeds/",
   },
+  {
+    preview: "./images/portfolio5.png",
+    original: "./images/portfolio5.png",
+    description: "Photo Search",
+    href: "https://achoma.github.io/Photo-Search/",
+  },
 ];
