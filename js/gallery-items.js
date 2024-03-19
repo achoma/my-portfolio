@@ -9,7 +9,7 @@ export const galleryItems = [
     preview: "./images/portfolio2.png",
     original: "./images/portfolio2.png",
     description: "IceCream",
-    href: "https://peterpoterek.github.io/goit-icecream-copy/",
+    href: "https://achoma.github.io/icecream-project/",
   },
   {
     preview: "./images/portfolio3.png",
