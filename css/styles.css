@@ -8,6 +8,7 @@
   --green-grey: #a7d1c0;
   --light-grey: #e9efec;
   --white: #fff;
+  --orange: #ff9d00;
 }
 * {
   box-sizing: border-box;
@@ -512,18 +513,21 @@ nav a[href*="#contact"]:hover {
   color: var(--dark-green);
 }
 .about h5 {
-  color: var(--gold);
-  font-weight: 800;
-  background-color: var(--dark-green);
-  padding: 10px;
-  border-radius: 5px;
+  display: none;
+  /* color: var(--gold); */
+  /* font-weight: 800; */
+  /* background-color: var(--dark-green); */
+  /* padding: 10px; */
+  /* border-radius: 5px; */
 }
 @media screen and (min-width: 1200px) {
   .about h5 {
-    text-shadow: none;
+    display: flex;
+    justify-content: center;
+    /* text-shadow: none; */
     font-weight: 800;
-    background-color: transparent;
-    padding: 0;
+    /* background-color: transparent; */
+    /* padding: 0; */
   }
 }
 
@@ -585,6 +589,7 @@ nav a[href*="#contact"]:hover {
 .skils-item svg {
   width: 48px;
   height: 48px;
+  justify-content: center;
 }
 .skils-item use[href="./images/icons.svg#icon-Vector1"] {
   fill: var(--light-grey);
@@ -918,7 +923,12 @@ footer {
 footer p {
   font-size: 14px;
 }
-
+.footer-icon {
+  width: 14px;
+  height: 14px;
+  fill: var(--orange);
+  margin: 0 6px;
+}
 /*---------------------------------
           MODAL
 ----------------------------------*/
