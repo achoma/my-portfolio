@@ -28,4 +28,22 @@ export const galleryItems = [
     description: "Photo Search",
     href: "https://achoma.github.io/Photo-Search/",
   },
+  {
+    preview: "./images/portfolio6.png",
+    original: "./images/portfolio6.png",
+    description: "SharkBuy",
+    href: "https://sharkbuy.pl/",
+  },
+  {
+    preview: "./images/portfolio7.png",
+    original: "./images/portfolio7.png",
+    description: "Filmoteka",
+    href: "https://krzysztof-goit.github.io/goit-projekt-filmoteka/",
+  },
+  {
+    preview: "./images/portfolio8.png",
+    original: "./images/portfolio8.png",
+    description: "Cinemania",
+    href: "https://magdalenasiniawska.github.io/cinemania_gr2/",
+  },
 ];
