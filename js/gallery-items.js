@@ -32,7 +32,7 @@ export const galleryItems = [
     preview: "./images/portfolio6.png",
     original: "./images/portfolio6.png",
     description: "SharkBuy",
-    href: "https://sharkbuy.pl/",
+    href: "https://sharkbuy.eu/",
   },
   {
     preview: "./images/portfolio7.png",
