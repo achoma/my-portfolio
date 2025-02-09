@@ -28,6 +28,12 @@ export const galleryItems = [
     description: "Photo Search",
     href: "https://achoma.github.io/Photo-Search/",
   },
+    {
+    preview: "./images/portfolio9.png",
+    original: "./images/portfolio9.png",
+    description: "Be-Online",
+    href: "http://www.be-online.com.pl/",
+  },
   {
     preview: "./images/portfolio6.png",
     original: "./images/portfolio6.png",
@@ -45,5 +51,11 @@ export const galleryItems = [
     original: "./images/portfolio8.png",
     description: "Cinemania",
     href: "https://magdalenasiniawska.github.io/cinemania_gr2/",
+  },
+    {
+    preview: "./images/portfolio10.png",
+    original: "./images/portfolio10.png",
+    description: "Portfolio",
+    href: "https://agnieszkachoma.online/",
   },
 ];

@@ -1,5 +1,7 @@
 :root {
   --dark: #000503;
+  --blue: #385f86;
+  --blue-g: #5fa134;
   --gold: #ad9551;
   --dark-gold: #9d8953;
   --dark-green: #07271a;
@@ -1010,3 +1012,10 @@ footer p {
   height: 80%;
   overflow: auto;
 }
+.be-online{
+  color: var(--blue);
+}
+.be-online:hover,
+.be-online:focus{
+  text-decoration: underline;
+color: var(--blue-g);}
