@@ -601,6 +601,7 @@ nav a[href*="#contact"]:hover {
 ----------------------------------*/
 .portfolio {
   padding: 50px 0;
+  background-color: var(--light-grey);
 }
 .portfolio h2 {
   font-size: 35px;
