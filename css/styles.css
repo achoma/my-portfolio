@@ -408,7 +408,7 @@ nav a[href*="#contact"]:hover {
 @media screen and (min-width: 1200px) {
   .hero-text {
     color: var(--light-grey);
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 20px;
     line-height: 28px;
     margin-bottom: 10px;
