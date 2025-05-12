@@ -476,7 +476,7 @@ nav a[href*="#contact"]:hover {
   }
 }
 
-.about-content {
+.about-content {align-items: center;
   padding-top: 40px;
   padding-bottom: 48px;
   display: flex;

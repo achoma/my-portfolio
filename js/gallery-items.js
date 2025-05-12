@@ -1,9 +1,51 @@
 export const galleryItems = [
   {
+    preview: "./images/portfolio15.webp",
+    original: "./images/portfolio15.webp",
+    description: "FESTIWAL KOBIECOŚCI 108 CUDÓW",
+    href: "https://festiwalkobiecosci108cudow.pl/",
+  },
+  {
+    preview: "./images/portfolio14.webp",
+    original: "./images/portfolio14.webp",
+    description: "MERDAM – salon strzyżenia i pielęgnacji psów",
+    href: "https://achoma.github.io/merdam/",
+  },
+  {
+    preview: "./images/portfolio13.webp",
+    original: "./images/portfolio13.webp",
+    description: "Kobieca Moc AK",
+    href: "https://wordpress2410099.home.pl/autoinstalator/wordpressplus2/",
+  },
+  {
+    preview: "./images/portfolio12.webp",
+    original: "./images/portfolio12.webp",
+    description: "ManiEduTroki Akademia Stylizacji Paznokci - Ewelina Sas",
+    href: "https://wordpress2410099.home.pl/autoinstalator/wordpresswoocommerce3/",
+  },
+  {
+    preview: "./images/portfolio11.webp",
+    original: "./images/portfolio11.webp",
+    description: "Habitare - Sklep online",
+    href: "http://wordpress2410099.home.pl/autoinstalator/wordpresswoocommerce6/",
+  },
+  {
     preview: "./images/portfolio4.webp",
     original: "./images/portfolio4.webp",
     description: "WebStudio - Effective Solutions for Your Business",
     href: "https://achoma.github.io/goit-markup-hw-07/",
+  },
+  {
+    preview: "./images/portfolio9.webp",
+    original: "./images/portfolio9.webp",
+    description: "Be-Online",
+    href: "http://www.be-online.com.pl/",
+  },
+  {
+    preview: "./images/portfolio6.webp",
+    original: "./images/portfolio6.webp",
+    description: "SharkBuy - Sklep online",
+    href: "https://sharkbuy.eu/",
   },
   {
     preview: "./images/portfolio2.webp",
@@ -28,18 +70,7 @@ export const galleryItems = [
     description: "Photo Search",
     href: "https://achoma.github.io/Photo-Search/",
   },
-  {
-    preview: "./images/portfolio9.webp",
-    original: "./images/portfolio9.webp",
-    description: "Be-Online",
-    href: "http://www.be-online.com.pl/",
-  },
-  {
-    preview: "./images/portfolio6.webp",
-    original: "./images/portfolio6.webp",
-    description: "SharkBuy",
-    href: "https://sharkbuy.eu/",
-  },
+
   {
     preview: "./images/portfolio7.webp",
     original: "./images/portfolio7.webp",
