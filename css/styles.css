@@ -458,7 +458,8 @@ nav a[href*="#contact"]:hover {
           ABOUT
   ----------------------------------*/
 .about {
-  padding-top: 65px;
+  padding: 60px 0;
+    background-color: var(--light-grey);
   background-image: linear-gradient(to bottom, var(--grey, rgba(249, 247, 248, 0.5)), var(--grey, rgba(249, 247, 248, 0.5))), url(../images/my-photo6.webp);
   text-align: center;
   background-repeat: no-repeat;
@@ -483,7 +484,7 @@ nav a[href*="#contact"]:hover {
 }
 @media screen and (min-width: 1200px) {
   .about-content {
-    margin-top: 80px;
+    margin-top: 70px;
     display: grid;
     grid-template-columns: 0.35fr 0.65fr;
     gap: 40px;
@@ -509,24 +510,7 @@ nav a[href*="#contact"]:hover {
   margin: 20px 0px;
   color: var(--dark-green);
 }
-.about h5 {
-  display: none;
-  /* color: var(--gold); */
-  /* font-weight: 800; */
-  /* background-color: var(--dark-green); */
-  /* padding: 10px; */
-  /* border-radius: 5px; */
-}
-@media screen and (min-width: 1200px) {
-  .about h5 {
-    display: flex;
-    justify-content: center;
-    /* text-shadow: none; */
-    font-weight: 800;
-    /* background-color: transparent; */
-    /* padding: 0; */
-  }
-}
+
 
 /*---------------------------------
           SKILS
@@ -595,7 +579,7 @@ nav a[href*="#contact"]:hover {
           PORTFOLIO
 ----------------------------------*/
 .portfolio {
-  padding: 50px 0;
+  padding: 60px 0;
   background-color: var(--light-grey);
 }
 .portfolio h2 {
@@ -691,8 +675,8 @@ nav a[href*="#contact"]:hover {
           CONTACT
   ----------------------------------*/
 .contact {
-  padding: 50px 0;
-  background-color: var(--dark-green);
+  padding: 60px 0;
+    background-color: var(--light-grey);  background-color: var(--dark-green);
 }
 .contact-span {
   margin-top: 80px;
