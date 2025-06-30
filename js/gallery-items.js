@@ -12,10 +12,10 @@ export const galleryItems = [
     href: "https://achoma.github.io/merdam/",
   },
   {
-    preview: "./images/portfolio13.webp",
-    original: "./images/portfolio13.webp",
-    description: "Kobieca Moc AK",
-    href: "https://wordpress2410099.home.pl/autoinstalator/wordpressplus2/",
+    preview: "./images/portfolio16.webp",
+    original: "./images/portfolio16.webp",
+    description: "Zanzibar Investments Partner",
+    href: "https://zip.tz/",
   },
   {
     preview: "./images/portfolio12.webp",
