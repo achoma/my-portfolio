@@ -21,7 +21,7 @@ export const galleryItems = [
     preview: "./images/portfolio14.webp",
     original: "./images/portfolio14.webp",
     description: "MERDAM – salon strzyżenia i pielęgnacji psów",
-    href: "https://achoma.github.io/merdam/",
+    href: "https://wordpress2410099.home.pl/autoinstalator/wordpressplus1/",
   },
   {
     preview: "./images/portfolio16.webp",
