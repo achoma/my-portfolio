@@ -1,5 +1,17 @@
 export const galleryItems = [
   {
+    preview: "./images/portfolio17.webp",
+    original: "./images/portfolio17.webp",
+    description: "KAWWWA.ONLINE",
+    href: "https://kawwwa.online/",
+  },
+    {
+    preview: "./images/portfolio18.webp",
+    original: "./images/portfolio18.webp",
+    description: "FLY TRANSFERY 24",
+    href: "https://flytransfery24.pl/",
+  },
+  {
     preview: "./images/portfolio15.webp",
     original: "./images/portfolio15.webp",
     description: "FESTIWAL KOBIECOŚCI 108 CUDÓW",
