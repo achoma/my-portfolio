@@ -29,6 +29,12 @@ export const galleryItems = [
     description: "Zanzibar Investments Partner",
     href: "https://zip.tz/",
   },
+    {
+    preview: "./images/portfolio19.webp",
+    original: "./images/portfolio19.webp",
+    description: "VeltariaGroup Sp. z o.o.",
+    href: "https://veltariagroup.com/",
+  },
   {
     preview: "./images/portfolio12.webp",
     original: "./images/portfolio12.webp",
