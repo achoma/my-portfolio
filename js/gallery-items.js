@@ -21,7 +21,7 @@ export const galleryItems = [
     preview: "./images/portfolio14.webp",
     original: "./images/portfolio14.webp",
     description: "MERDAM – salon strzyżenia i pielęgnacji psów",
-    href: "https://wordpress2410099.home.pl/autoinstalator/wordpressplus1/",
+    href: "https://serwer402735.lh.pl/autoinstalator-home/wordpressplus1/",
   },
   {
     preview: "./images/portfolio16.webp",
@@ -39,14 +39,14 @@ export const galleryItems = [
     preview: "./images/portfolio12.webp",
     original: "./images/portfolio12.webp",
     description: "ManiEduTroki Akademia Stylizacji Paznokci - Ewelina Sas",
-    href: "https://wordpress2410099.home.pl/autoinstalator/wordpresswoocommerce3/",
+    href: "https://www.ewelina-sas.pl/",
   },
-  {
-    preview: "./images/portfolio11.webp",
-    original: "./images/portfolio11.webp",
-    description: "Habitare - Sklep online",
-    href: "http://wordpress2410099.home.pl/autoinstalator/wordpresswoocommerce6/",
-  },
+  // {
+  //   preview: "./images/portfolio11.webp",
+  //   original: "./images/portfolio11.webp",
+  //   description: "Habitare - Sklep online",
+  //   href: "http://wordpress2410099.home.pl/autoinstalator/wordpresswoocommerce6/",
+  // },
   {
     preview: "./images/portfolio4.webp",
     original: "./images/portfolio4.webp",
@@ -57,13 +57,13 @@ export const galleryItems = [
     preview: "./images/portfolio9.webp",
     original: "./images/portfolio9.webp",
     description: "Be-Online",
-    href: "http://www.be-online.com.pl/",
+    href: "https://achoma.github.io/be-online/",
   },
   {
     preview: "./images/portfolio6.webp",
     original: "./images/portfolio6.webp",
     description: "SharkBuy - Sklep online",
-    href: "https://sharkbuy.eu/",
+    href: "https://sharkbuy.pl/",
   },
   {
     preview: "./images/portfolio2.webp",
@@ -105,6 +105,6 @@ export const galleryItems = [
     preview: "./images/portfolio10.webp",
     original: "./images/portfolio10.webp",
     description: "Portfolio",
-    href: "https://agnieszkachoma.online/",
+    href: "https://agnieszkachoma.pl/",
   },
 ];
