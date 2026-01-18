@@ -42,7 +42,9 @@
             line-height: 1.6;
             -webkit-print-color-adjust: exact;
         }
-
+        a{
+            text-decoration: none !important;
+        }
         /* PAGE STRUCTURE (A4 Aspect Ratio) */
         .cv-container {
             max-width: 210mm;
@@ -83,12 +85,12 @@
 
 
         .contact-info {
-            margin-bottom: 40px;
+            margin-bottom: 32px;
         }
 
         .contact-item {
-            margin-bottom: 12px;
-            font-size: 0.9em;
+            margin-bottom: 2px;
+            font-size: 0.95em;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -118,11 +120,11 @@
 
         .skills-list {
             list-style: none;
-            margin-bottom: 30px;
+            margin-bottom: 32px;
         }
 
         .skills-list li {
-            margin-bottom: 6px;
+            margin-bottom: 2px;
             font-size: 0.95em;
         }
 
@@ -338,25 +340,36 @@
             <div class="section-title-sidebar">Umiejętności</div>
 
             <ul class="skills-list">
-                <span class="skill-category">Frontend & Core</span>
-                <li>HTML5 / CSS3</li>
-                <li>JavaScript (ES6+)</li>
-                <li>Responsive Web Design</li>
-                <li>Mobile-first Approach</li>
-                <li>Fetch API / LocalStorage</li>
+                <span class="skill-category">Front-End Development</span>
+                <li>HTML | CSS | JavaScript | Responsive Web
+                Design <br>(mobile-first) | Fetch API |
+                LocalStorage</li>
 
-                <span class="skill-category">WordPress Ecosystem</span>
-                <li>WordPress Development</li>
-                <li>WooCommerce</li>
-                <li>Elementor & Breakdance</li>
-                <li>Gutenberg Blocks (ACF)</li>
+                <span class="skill-category">WordPress & Page Builders</span>
+                <li>WordPress | Gutenberg | Elementor |
+                Breakdance | WooCommerce</li>
 
-                <span class="skill-category">Backend & Tools</span>
-                <li>PHP (Podstawy/Średni)</li>
-                <li>REST API</li>
-                <li>Git / GitHub</li>
-                <li>Figma (Dev Handover)</li>
+                <span class="skill-category">Integracje & API</span>
+                <li>REST API (WordPress, React) | Google
+                Analytics | Microsoft Clarity</li>
+
+                <span class="skill-category">Backend & Optymalizacja</span>
+                <li>PHP | SEO | Optymalizacja konwersji
+                i szybkości działania</li>
+
+                <span class="skill-category">Narzędzia Developerskie</span>
+                <li>Git | Figma</li>
             </ul>
+
+            <div class="section-title-sidebar">MIĘKKIE</div>
+            <ul class="skills-list">
+                <li>Samodzielność i dobra organizacja pracy
+                | Komunikatywność i współpraca
+                zespołowa | Zmysł estetyczny i dbałość
+                o UX/UI | Myślenie analityczne |
+                Dokładność i uważność na szczegóły</li>
+            </ul>
+
 
             <div class="section-title-sidebar">Języki</div>
             <ul class="skills-list">
@@ -373,9 +386,9 @@
             </header>
 
             <div class="summary">
-                WordPress Developer z doświadczeniem w tworzeniu i optymalizacji sklepów WooCommerce. Specjalizuję się w
-                pracy z builderami stron oraz optymalizacji UX/UI. Moim celem jest wniesienie wartości biznesowej
-                (Profit First) przy jednoczesnym rozwoju w kierunku nowoczesnego Front-endu.
+                WordPress Developer łączący zmysł techniczny (PHP, HTML, CSS) z&nbsp;estetyką (Elementor). Specjalizuję się w tworzeniu 
+                i&nbsp;optymalizacji sklepów WooCommerce oraz dedykowanych rozwiązaniach (ACF). Moim celem jest dostarczanie stabilnych,
+                szybkich stron i&nbsp;przejmowanie odpowiedzialności za techniczne aspekty projektów.
             </div>
 
             <section>
@@ -421,6 +434,16 @@
                 <div class="job-item">
                     <div class="job-header">
                         <div>
+                            <div class="job-title">Doradca ds. Nieruchomości</div>
+                            <div class="job-company">Home Broker S.A w Rzeszowie</div>
+                        </div>
+                        <div class="job-date">12.2019 – 04.2021</div>
+                    </div>
+                </div>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <div>
                             <div class="job-title">Młodszy Ekspert Celny</div>
                             <div class="job-company">Izba Administracji Skarbowej w Przemyślu</div>
                         </div>
@@ -432,14 +455,14 @@
             <section>
                 <h3 class="section-title-main">Wybrane Projekty</h3>
                 <div class="project-tags">
-                    <span class="tag">Festiwal Kobiecości 108 cudów</span>
-                    <span class="tag">FlyTransfery24</span>
-                    <span class="tag">Sklep SharkBuy</span>
-                    <span class="tag">Merdam</span>
-                    <span class="tag">Veltaria Group</span>
-                    <span class="tag">Mani Edu Triki</span>
-                    <span class="tag">Feline Breed Checker</span>
-                    <span class="tag">WebStudio</span>
+                    <a href=""><span class="tag">Festiwal Kobiecości 108 cudów</span></a>
+                    <a><span class="tag">FlyTransfery24</span></a>
+                    <a><span class="tag">Sklep SharkBuy</span></a>
+                    <a><span class="tag">Merdam</span></a>
+                    <a><span class="tag">Veltaria Group</span></a>
+                    <a><span class="tag">Mani Edu Triki</span></a>
+                    <a><span class="tag">Feline Breed Checker</span></a>
+                    <a><span class="tag">WebStudio</span></a>
                 </div>
             </section>
 
