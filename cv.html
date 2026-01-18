@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Agnieszka Choma - Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --color-latte: #f0ebe5;
+            --color-lungo-d: #d4af9c;
+            --color-lungo-d2: #c47d6e;
+            --color-lungo-l: #eac4b3;
+            --color-white: #f9f8f4;
+            --color-text: #3e3a37;
+
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Lato', sans-serif;
+        }
+
+        /* RESET & BASE */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #fff;
+            /* Tło podkładki pod "kartkę" */
+            color: var(--color-text);
+            font-family: var(--font-body);
+            font-size: 14px;
+            line-height: 1.6;
+            -webkit-print-color-adjust: exact;
+        }
+
+        /* PAGE STRUCTURE (A4 Aspect Ratio) */
+        .cv-container {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 40px auto;
+            background: var(--color-white);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            display: grid;
+            grid-template-columns: 30% 70%;
+            /* Układ 2-kolumnowy */
+        }
+
+        /* LEFT SIDEBAR (DANE, UMIEJĘTNOŚCI) */
+        .sidebar {
+            background-color: var(--color-latte);
+            color: var(--color-text);
+            padding: 30px 20px;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            /* background-color: var(--color-accent); opcjonalnie zostaw jako fallback */
+            border-radius: 50%;
+            margin: 0 auto 30px auto;
+            overflow: hidden;
+            border: 4px solid var(--color-lungo-d);
+
+            /* ZMIANA: Ścieżka do Twojego pliku */
+            background-image: url('images/Agnieszka Choma.png');
+
+            background-size: cover;
+            /* Skaluje zdjęcie, by wypełniło koło */
+            background-position: center;
+            /* Centruje zdjęcie */
+        }
+
+
+
+        .contact-info {
+            margin-bottom: 40px;
+        }
+
+        .contact-item {
+            margin-bottom: 12px;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-item a {
+            color: var(--color-text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-item a:hover {
+            color: var(--color-lungo-d2);
+        }
+
+        .section-title-sidebar {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid var(--color-lungo-d);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            color: var(--color-lungo-d2);
+        }
+
+        .skills-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .skills-list li {
+            margin-bottom: 6px;
+            font-size: 0.95em;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: var(--color-text);
+            text-decoration: underline;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            display: block;
+            font-size: 0.95em;
+            text-transform: uppercase;
+        }
+
+        /* RIGHT CONTENT (DOŚWIADCZENIE) */
+        .main-content {
+            padding: 40px;
+            background-color: var(--color-white);
+        }
+
+        .header-name {
+            font-family: var(--font-heading);
+            /* color: var(--color-lungo-d2); */
+        }
+
+        .header-name h1 {
+            color: var(--color-text) !important;
+            font-size: 2.5em;
+            font-weight: 550;
+            line-height: 1.1;
+            /* text-transform: uppercase; */
+        }
+
+        .header-name h2 {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--color-lungo-d2);
+            margin-top: 5px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .summary {
+            margin-bottom: 30px;
+            color: var(--color-text);
+            font-style: italic;
+            border-left: 3px solid var(--color-lungo-d);
+            padding-left: 15px;
+        }
+
+        .section-title-main {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: var(--color-lungo-d2);
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title-main::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--color-lungo-d);
+            margin-left: 15px;
+            border-bottom: 1px solid var(--color-lungo-d);
+        }
+
+        .job-item {
+            margin-bottom: 25px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 1.1em;
+            color: var(--color-text);
+        }
+
+        .job-company {
+            font-weight: 600;
+            color: var(--color-lungo-d2);
+        }
+
+        .job-date {
+            font-size: 0.95em;
+            color: #888;
+            white-space: nowrap;
+        }
+
+        .job-details {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .job-details li {
+            margin-bottom: 4px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 30px;
+        }
+
+        .tag {
+            background-color: var(--color-latte);
+            color: var(--color-text);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+            border: 1px solid var(--color-lungo-d);
+        }
+        .tag :hover,
+        .tag :focus{
+            background-color: var(--color-lungo-l);
+            color: var(--color-text);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+            border: 1px solid var(--color-lungo-d2);
+        }
+
+
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        .rodo {
+            font-size: 0.6em;
+            color: var(--color-lungo-d);
+            margin-top: 40px;
+            text-align: justify;
+            line-height: 1.3;
+        }
+
+        /* PRINT STYLES */
+        @media print {
+            body {
+                background: none;
+            }
+
+            .cv-container {
+                margin: 0;
+                box-shadow: none;
+                width: 100%;
+                height: 100%;
+            }
+
+            /* Wymuszenie drukowania tła (dla ciemnego paska) */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
+
+        /* RESPONSIVE FOR MOBILE VIEWING */
+        @media (max-width: 768px) {
+            .cv-container {
+                grid-template-columns: 1fr;
+                height: auto;
+            }
+
+            .sidebar {
+                padding: 20px;
+                text-align: center;
+            }
+
+            .contact-info {
+                display: flex;
+                flex-direction: column;
+                alignItems: center;
+            }
+
+            .main-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv-container">
+
+        <aside class="sidebar">
+            <div class="profile-photo" style="background-image: url('images/Agnieszka Choma.png');">
+            </div>
+
+            <div class="contact-info">
+                <div class="section-title-sidebar">Kontakt</div>
+                <div class="contact-item">📧 aga.choma02@gmail.com</div>
+                <div class="contact-item">📞 +48 509 016 515</div>
+                <div class="contact-item">🔗 LinkedIn | GitHub</div>
+                <div class="contact-item">🌐 Portfolio</div>
+            </div>
+
+            <div class="section-title-sidebar">Umiejętności</div>
+
+            <ul class="skills-list">
+                <span class="skill-category">Frontend & Core</span>
+                <li>HTML5 / CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Responsive Web Design</li>
+                <li>Mobile-first Approach</li>
+                <li>Fetch API / LocalStorage</li>
+
+                <span class="skill-category">WordPress Ecosystem</span>
+                <li>WordPress Development</li>
+                <li>WooCommerce</li>
+                <li>Elementor & Breakdance</li>
+                <li>Gutenberg Blocks (ACF)</li>
+
+                <span class="skill-category">Backend & Tools</span>
+                <li>PHP (Podstawy/Średni)</li>
+                <li>REST API</li>
+                <li>Git / GitHub</li>
+                <li>Figma (Dev Handover)</li>
+            </ul>
+
+            <div class="section-title-sidebar">Języki</div>
+            <ul class="skills-list">
+                <li>Polski (Ojczysty)</li>
+                <li>Angielski (B2)</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="header-name">
+                <h1>Agnieszka Choma</h1>
+                <h2>Web Developer</h2>
+            </header>
+
+            <div class="summary">
+                WordPress Developer z doświadczeniem w tworzeniu i optymalizacji sklepów WooCommerce. Specjalizuję się w
+                pracy z builderami stron oraz optymalizacji UX/UI. Moim celem jest wniesienie wartości biznesowej
+                (Profit First) przy jednoczesnym rozwoju w kierunku nowoczesnego Front-endu.
+            </div>
+
+            <section>
+                <h3 class="section-title-main">Doświadczenie</h3>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Web Developer (Freelance)</div>
+                            <div class="job-company">kawwwa.online</div>
+                        </div>
+                        <div class="job-date">2025 – obecnie</div>
+                    </div>
+                    <ul class="job-details">
+                        <li>Projektowanie i modyfikacja stron WordPress (Gutenberg, ACF Blocks, Elementor).</li>
+                        <li>Budowa sklepów WooCommerce: konfiguracja płatności, personalizacja szablonów.</li>
+                        <li>Optymalizacja wydajności (Core Web Vitals) i stabilności wizualnej (CLS).</li>
+                        <li>Wdrażanie analityki (Google Analytics, Clarity) i integracja narzędzi marketingowych.</li>
+                        <li>Strategie SEO i optymalizacja techniczna (cache, minifikacja).</li>
+                    </ul>
+                </div>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Konsultant ds. Obsługi Klienta</div>
+                            <div class="job-company">Invo System Sp. z o.o. / Krajowy Instytut Mediów</div>
+                        </div>
+                        <div class="job-date">04.2023 – 02.2025</div>
+                    </div>
+                </div>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Kontroler Skarbowy</div>
+                            <div class="job-company">Izba Administracji Skarbowej w Rzeszowie</div>
+                        </div>
+                        <div class="job-date">04.2021 – 05.2023</div>
+                    </div>
+                </div>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Młodszy Ekspert Celny</div>
+                            <div class="job-company">Izba Administracji Skarbowej w Przemyślu</div>
+                        </div>
+                        <div class="job-date">07.2006 – 12.2019</div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="section-title-main">Wybrane Projekty</h3>
+                <div class="project-tags">
+                    <span class="tag">Festiwal Kobiecości 108 cudów</span>
+                    <span class="tag">FlyTransfery24</span>
+                    <span class="tag">Sklep SharkBuy</span>
+                    <span class="tag">Merdam</span>
+                    <span class="tag">Veltaria Group</span>
+                    <span class="tag">Mani Edu Triki</span>
+                    <span class="tag">Feline Breed Checker</span>
+                    <span class="tag">WebStudio</span>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="section-title-main">Wykształcenie</h3>
+                <div class="education-item">
+                    <strong>Fullstack Developer</strong> | GoIT (2024–2025)
+                </div>
+                <div class="education-item">
+                    <strong>Statystyka dla Ekonomistów</strong> | Uniwersytet Rzeszowski (Studia podyplomowe)
+                </div>
+                <div class="education-item">
+                    <strong>Zarządzanie i Marketing</strong> | UMCS (Magisterskie)
+                </div>
+            </section>
+
+            <footer class="rodo">
+                Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu
+                rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia
+                2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie
+                swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
