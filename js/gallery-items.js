@@ -32,8 +32,8 @@ export const galleryItems = [
     {
     preview: "./images/portfolio19.webp",
     original: "./images/portfolio19.webp",
-    description: "VeltariaGroup Sp. z o.o.",
-    href: "https://veltariagroup.com/",
+    description: "Supergevity - Suplement diety",
+    href: "https://supergevity.de/",
   },
   {
     preview: "./images/portfolio12.webp",
@@ -41,12 +41,12 @@ export const galleryItems = [
     description: "ManiEduTroki Akademia Stylizacji Paznokci - Ewelina Sas",
     href: "https://www.ewelina-sas.pl/",
   },
-  // {
-  //   preview: "./images/portfolio11.webp",
-  //   original: "./images/portfolio11.webp",
-  //   description: "Habitare - Sklep online",
-  //   href: "http://wordpress2410099.home.pl/autoinstalator/wordpresswoocommerce6/",
-  // },
+  {
+    preview: "./images/portfolio11.webp",
+    original: "./images/portfolio11.webp",
+    description: "Edyta Podroze - Londyn dla Kobiet",
+    href: "https://edytapodroze.pl/",
+  },
   {
     preview: "./images/portfolio4.webp",
     original: "./images/portfolio4.webp",
@@ -58,6 +58,24 @@ export const galleryItems = [
     original: "./images/portfolio9.webp",
     description: "Be-Online",
     href: "https://achoma.github.io/be-online/",
+  },
+  {
+    preview: "./images/portfolio20.webp",
+    original: "./images/portfolio20.webp",
+    description: "Bold and Panache",
+    href: "https://boldandpanache.com/",
+  },
+    {
+    preview: "./images/portfolio21.webp",
+    original: "./images/portfolio21.webp",
+    description: "Strona ślubna - Magdalena i Dawid",
+    href: "https://magdaidawid.pl/",
+  },
+    {
+    preview: "./images/portfolio13.webp",
+    original: "./images/portfolio13.webp",
+    description: "Kobieca Moc AK",
+    href: "https://kobiecamoc-ak.pl/",
   },
   {
     preview: "./images/portfolio6.webp",
@@ -74,7 +92,8 @@ export const galleryItems = [
   {
     preview: "./images/portfolio3.webp",
     original: "./images/portfolio3.webp",
-    description: "Simply Chocolate",
+    description: "Anna Kitela - Pomagam wrócić do siebie",
+    href: "https://annakitela.pl/",
   },
   {
     preview: "./images/portfolio1.webp",
